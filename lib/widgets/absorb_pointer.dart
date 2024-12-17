@@ -6,9 +6,7 @@ class AbsorbPointerDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Absorb Pointer"),
-      ),
+
       body: Center(
         child: Stack(
           alignment: Alignment.center,

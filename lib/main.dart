@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/widgets/about_dialog.dart';
-import 'package:flutter_widgets/widgets/about_list_tile.dart';
+
 import 'package:flutter_widgets/page_view.dart';
+import 'package:flutter_widgets/widgets/alert_dialog.dart';
 
 void main() {
   runApp(const MyApp());
