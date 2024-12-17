@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/widgets/about_dialog.dart';
 import 'package:flutter_widgets/widgets/about_list_tile.dart';
+import 'package:flutter_widgets/widgets/absorb_pointer.dart';
 
 class PageViewDemo extends StatefulWidget {
   PageViewDemo({super.key});
@@ -14,10 +15,12 @@ class _PageViewDemoState extends State<PageViewDemo> {
   final List<Widget> pageList = [
     AboutDialogDemo(),
     AboutListTileDemo(),
+    AbsorbPointerDemo(),
   ];
   final List<String> pageTitle = [
     "About Dialog",
     "About List Tile Dialog",
+    "Absorb Pointer",
   ];
   @override
   void initState() {
@@ -51,6 +54,7 @@ class _PageViewDemoState extends State<PageViewDemo> {
           Container(
             height: 50,
             child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
               child: Row(
                 children: List.generate(pageList.length, (index) {
                   return MaterialButton(onPressed: (){

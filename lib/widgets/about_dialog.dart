@@ -6,6 +6,9 @@ class AboutDialogDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Alert Dialog"),
+      ),
       body: Container(
         color: Colors.blueGrey,
         child: Center(
