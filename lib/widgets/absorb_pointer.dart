@@ -9,8 +9,12 @@ class AbsorbPointerDemo extends StatelessWidget {
 
       body: Center(
         child: Stack(
+
           alignment: Alignment.center,
           children: [
+            Container(
+              color: Colors.cyan,
+            ),
             SizedBox(
               width: 200,
               height: 70,

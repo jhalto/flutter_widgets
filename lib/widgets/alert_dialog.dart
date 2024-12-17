@@ -8,8 +8,18 @@ class AlertDialogDemo extends StatelessWidget {
     return Scaffold(
 
       body: Center(
-        child: TextButton(
+        child: OutlinedButton(
+            style:OutlinedButton.styleFrom(
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5),
+                    side: BorderSide(
+                      color: Colors.transparent,
 
+                    )
+            )
+            ),
             onPressed: (){
           showDialog(context: context, builder: (context) {
             return AlertDialog(
