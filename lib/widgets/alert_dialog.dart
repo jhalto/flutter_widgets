@@ -25,7 +25,9 @@ class AlertDialogDemo extends StatelessWidget {
             return AlertDialog(
               title: Text("Hello"),
               actions: [
-                Icon(Icons.menu),
+                IconButton(onPressed: (){
+                  Navigator.pop(context);
+                },icon: Icon(Icons.menu)),
                 Icon(Icons.menu),
                 Icon(Icons.menu),
                 Icon(Icons.menu),
